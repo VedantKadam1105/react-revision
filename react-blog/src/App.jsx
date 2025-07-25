@@ -1,5 +1,5 @@
 import Header from "./Header"
-import Login from "./UserComponent"
+import Login,{Profile, Setting, userkey} from "./UserComponent"
 function App() {
   return(
     <>
@@ -9,7 +9,10 @@ function App() {
     <Fruit></Fruit>
     <Colour></Colour>
     <Login></Login>
-    {sum(30,20)}
+    <Profile></Profile>
+    <Setting></Setting>
+    <h1>{sum(30,20)}</h1>
+    <h1>{userkey}</h1>
     </>
     
   )
